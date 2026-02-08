@@ -1,20 +1,12 @@
 const noBtn = document.getElementById("no");
 const yesBtn = document.getElementById("yes");
 
-noBtn.addEventListener("mouseover", moverBoton);
-noBtn.addEventListener("touchstart", moverBoton);
+noBtn.addEventListener("touchstart", mover);
+noBtn.addEventListener("mouseover", mover);
 
-function moverBoton() {
-  const padding = 20;
-  const maxX = window.innerWidth - noBtn.offsetWidth - padding;
-  const maxY = window.innerHeight - noBtn.offsetHeight - padding;
-
-  const x = Math.random() * maxX;
-  const y = Math.random() * maxY;
-
-  noBtn.style.position = "fixed";
-  noBtn.style.left = `${x}px`;
-  noBtn.style.top = `${y}px`;
+function mover() {
+  const desplazamiento = Math.random() > 0.5 ? -120 : 120;
+  noBtn.style.transform = `translateX(${desplazamiento}px)`;
 }
 
 yesBtn.addEventListener("click", () => {
@@ -29,8 +21,8 @@ yesBtn.addEventListener("click", () => {
       color:white;
       text-align:center;
       padding:20px;">
-      <h1> ¡Lo Sabía😞! </h1>
-      <p style="font-size:1.5rem;">Igual Celoso no Soy🥵</p>
+      <h1> ¡Lo Sabía 😞! </h1>
+      <p style="font-size:1.5rem;">Igual Celoso no Soy 🥵</p>
     </div>
   `;
 });
