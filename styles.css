@@ -47,7 +47,7 @@ h1 {
   display: flex;
   flex-direction: column; /* uno debajo del otro */
   gap: 20px;              /* separación ENTRE botones */
-  justify-content: center;
+  justify-left: left;
   align-items: center;
   margin-top: 20px;
 }
@@ -91,4 +91,5 @@ button:hover {
     width: 130px;
   }
 }
+
 
