@@ -22,8 +22,9 @@ yesBtn.addEventListener("click", () => {
       text-align:center;
       padding:20px;">
       <h1> ¡Lo Sabía 😞! </h1>
-      <p style="font-size:1.5rem;">Mala Mujer</p>
+      <p style="font-size:1.5rem;">Igual Celoso no Soy 🥵</p>
     </div>
   `;
 });
+
 
